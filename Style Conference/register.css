@@ -1,0 +1,102 @@
+
+.register-body{
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.register-body .side-content{
+    margin-right: 4em;
+    display: inline-block;
+    width: 45%;
+}
+
+.register-body form{
+    display: inline-block;
+    width: 25%;
+    max-width: 270px;
+}
+
+.side-content #purchase-pass{
+    line-height: 2em;
+}
+
+.side-content label{
+    color: grey;
+    font-weight: 400;
+}
+
+.side-content #purchase-reason{
+    padding: 2em 0;
+}
+
+.side-content ul{
+    padding-top: 1em;
+    padding-left: 2em;
+    list-style: square;
+    color: grey;
+}
+
+.side-content li p{
+    line-height: 1.5em;
+}
+
+form input, textarea{
+    display: inline-block;
+    width: 100%;
+    height: 2em;
+    margin-bottom: 2em;
+    padding-left: 0.5em;
+    border: 1px solid grey;
+    border-radius: 0.4em;
+}
+
+form label{
+    font-weight: 400;
+    line-height: 2em;
+}
+
+form textarea{
+    height: 6em;
+    padding-top: 0.5em;
+    font-size: 1em;
+    
+}
+
+form input[type="submit"]{
+    line-height: 0;
+    display: block;
+    width: auto;
+    font-size: 1em;
+    padding: 1.5em 2em;
+    text-align: center;
+    border: 0;
+    background-color: #2a9d8f ;
+    color: white;
+}
+
+form input[type="submit"]:hover{
+    color:#2a9d8f;
+    background-color: white;
+    border: 1px solid #2a9d8f;
+}
+
+@media(max-width: 700px){
+    .register-body{
+        flex-direction: column;
+    }
+
+    .register-body .side-content{
+        width: 100%;
+    }
+
+    .register-body form{
+        width: 100%;
+        max-width: none;
+        margin-top: 3em;
+        padding-bottom: 0;
+    }
+
+
+}

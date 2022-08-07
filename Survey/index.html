@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Lato|Oswald|Pacifico|Roboto">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="header">
+                Application
+            </h1>
+    
+            <p class="notice"><b>Note:</b> Form is to be completed at least 21 days prior</p>
+            <h2 class="sectionHeader">Personal Details</h2>
+
+    
+            <div class="section personalDetails">    
+                <label for="nameInput">Name: </label>
+                <input type="text" id="nameInput" placeholder="Enter name here" required>
+                <br>
+    
+                <label for="addressInput">Address: </label>
+                <input type="text" id="addressInput" placeholder="Enter address here" required>
+                <br>
+    
+                <label for="emailInput">Email: </label>
+                <input type="text" id="emailInput" placeholder="Enter email here" required>
+                <br>
+    
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="text" id="phoneNumberInput" placeholder="Enter 10 digit number" required>
+                <br>
+    
+                <label for="iqInput">IQ: </label>
+                <input type="text" id="iqInput" placeholder="Enter IQ here" required>
+                <br>
+    
+                <label for="genderInput">Gender</label>
+                <div class="genderInput">
+                    <input type="radio" id="maleGender" name="gender-choice" required>
+                    <label for="maleGender">Male</label>
+                    <br>
+    
+                    <input type="radio" id="femaleGender" name="gender-choice">
+                    <label for="femaleGender">Female</label>
+                    <br>
+    
+                    <input type="radio" id="otherGender" name="gender-choice">
+                    <label for="otherGender">Other</label>
+                    <br>
+                </div>
+    
+                <label for="dateRequesting">Date of Proposed Outing: </label>
+                <input type="date" required>
+            </div>
+    
+            <div class="section experienceCheckboxes">
+                <h2 class="experienceHeader">Check All That Apply</h2>
+    
+                <div>
+                    <input type="checkbox" name="haveTattoosOrPiercings" id="checkbox1" value="haveTattoosOrPiercing">
+                    <label for="checkbox1">I have tattoos and/or piercings</label>
+                    <br>
+    
+                    <input type="checkbox" id="checkbox2" name="twoYearsOlder" value="isTwoYearsOlderThanDaughter">
+                    <label for="checkbox2">I am more than 2 years older than my daughter</label>
+                    <br>
+    
+                    <input type="checkbox" id="checkbox3" name="ownVan" value="ownVan">
+                    <label for="checkbox3">I own a panel van or V8 ute</label>
+                    <br>
+    
+                    <input type="checkbox" id="checkbox4" name="workFullTime" value="isWorkFullTime">
+                    <label for="checkbox4">I work full-time</label>
+                    <br>
+    
+                    <input type="checkbox" id="checkbox5" name="richParents" value="haveRichParents">
+                    <label for="checkbox5">My parents are rich</label>
+                    <br>
+    
+                    <input type="checkbox" id="checkbox6" name="dateInWellLitPublic" value="dateInWellLitPublic">
+                    <label for="checkbox6">Is the date at a well lit public location</label>
+    
+                </div>
+            </div>
+    
+            <div class="section politicalSection">
+                <label for="political-persuasion-choice">Political Persuasion: </label>
+                <input list="political-persuasion-options" id="political-persuasion-choice" name="political-persuation-choice" required>
+    
+                <datalist id="political-persuasion-options">
+                    <option value="Left Wing"></option>
+                    <option value="Right Wing"></option>
+                    <option value="Conservative"></option>
+                    <option value="Nazi"></option>
+                </datalist>
+    
+    
+                <label for="education-level">Education Level Completed: </label>
+                <input list="education-levels" name="current-education-level" id="education-level" required>
+    
+                <datalist id="education-levels">
+                    <option value="University"></option>
+                    <option value="College"></option>
+                    <option value="High School"></option>
+                    <option value="None"></option>
+                </datalist>
+    
+            </div>
+    
+            <h2 class="sectionHeader">Essay Section</h2>
+
+            <div class="section essaySection">
+                <h3 class="essayQuestion">In 50 words or more explain why you want to date my daughter</h3>
+                <textarea name="explain-daughter-to-me" placeholder="Enter Text Here" required></textarea>
+    
+                <h3 class="essayQuestion">Please upload contact details for 2 references</h3>
+                <textarea name="essay-references" placeholder="Enter Text Here" required></textarea>
+                <br>
+
+    
+                <label for="certificates">Upload Police Clearance Certificate, Bank Statement and Medical Certificates here: </label>
+                <input class="myButton fileButton" type="file" required>
+            </div>
+    
+                <input class="myButton submitButton" type="submit" placeholder="Send Your Application">
+        </form>
+    </div>
+
+
+</body>
+</html>

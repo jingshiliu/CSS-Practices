@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.container{
+    width: 100%;
+}
+
+.showcase .bg-img{
+    position: absolute;
+    background-image: url("https://www.lighthouselabs.ca/uploads/post/open_graph_image/459/Coding-vs-programming.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+    width: 100%;
+    height: 450px;
+}
+
+.showcase{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-content{
+    width: 900px;
+    height: 428px;
+}
+
+.showcase-content h1, p, a{
+    margin-bottom: 30px;
+}
+
+.showcase-content h1{
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.showcase-content p{
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 2em;
+}
+
+.showcase-content a{
+    color: white;
+    background-color: rgb(50, 47, 49);
+    font-size: 20px;
+    padding: 1em 2em;
+    border: 1px solid grey;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+
+
+.content-web-app-dev{
+    height: auto;
+    text-align: center;
+}
+
+.content-web-app-dev h1{
+    padding: 1.5em 0;
+}
+
+.content-web-app-dev p{
+    columns: 2;
+    column-gap: 2em;
+    font-size: 1.1em;
+    padding-bottom: 3em;
+    margin: 0 auto;
+    width: 800px;
+    line-height: 1.5em;
+}
+
+.content-services{
+    background-color: rgb(52, 52, 52);
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-section{
+    width: 273px;
+    height: auto;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+}
+
+.service-section:nth-of-type(2){
+    margin: 1em;
+}
+
+.service-section img{
+    width: 100%;
+    height: auto;
+}
+
+.service-section h2{
+    font-weight: 900;
+    font-size: 1.4em;
+    padding: 1.5em 0;
+}
+
+.service-section p{
+    padding: 0 1em;
+    line-height: 1.5em;
+}
+
+.section-3{
+    height: auto;
+    text-align: center;
+    padding: 2em;
+}
+
+.section-3 h1{
+    font-size: 1.8em;
+    padding: 2em;
+}
+
+.section-3 p{
+    font-size: 1em;
+    padding-bottom: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-4{
+    display: flex;
+
+}
+
+.section-4 div{
+    width: 50%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+.section-4 div h2{
+    font-size: x-large;
+    padding: 2em;
+}
+
+.section-4 div p{
+    font-size: medium;
+    line-height: 1.5em;
+    padding: 3em;
+    padding-top: 0;
+}
+
+.content-about{
+    background-color: rgb(52, 52, 52);
+}
+
+.content-contact{
+    background-color: rgb(51, 107, 210);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+footer div{
+    display: inline-block;
+    width: 50%;
+    padding: 3em;
+}
+
+footer div span a{
+    color: white;
+}
+
+@media(max-width: 920px){
+    .showcase-content{
+        padding: 0 1em;
+    }
+    .service-section{
+        width: 33%;
+    }
+}
+
+@media(max-width: 700px){
+    .content-web-app-dev p{
+        columns: 1;
+        width: 90%;
+    }
+
+    .content-services{
+        flex-direction: column;
+    }
+
+    .service-section{
+        width: 100%;
+    }
+
+    .section-4{
+        flex-direction: column;
+    }
+
+    .section-4 div{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 3em
+    }
+
+    footer div{
+        width: 100%;
+        padding: 0;
+    }
+}

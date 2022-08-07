@@ -1,0 +1,96 @@
+ul{
+    list-style-type: none;
+}
+
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    font-family: 'Dosis';
+}
+
+.headerPhoto{
+    width: 1000px;
+    height: auto;
+    background-size: cover;
+}
+
+.header div{
+    margin: 0 auto;
+}
+
+.quote{
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+.timelineHeader{
+    font-size: 70px;
+    
+}
+
+.timelineBody{
+    width: 700px;
+    position: relative;
+    margin-right: 0px;
+}
+
+.timelineBody ul{
+    padding: 0;
+    margin: 0;
+}
+
+.timeline{
+    display: inline-block;
+    padding: 0.5em;
+    width: 100px;
+    text-align: center;
+    margin: auto auto;
+}
+
+.experience{
+    display: inline-block;
+    width: 550px;
+    padding-top: 0.5em;
+    
+}
+
+.timelineBody ul li{
+    border-top: 1.5px solid grey;
+}
+
+.nutshellSection{
+    display: inline-block;
+    width: 300px;
+    font-size: small;
+    position: relative;
+    left: 800px;
+    top: -1000px;
+}
+
+.nutshellSection h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.nutshellLabel{
+    
+    text-align: end;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+}
+
+.nutshellExperience{
+    display: inline-block;
+    font-weight: 100;
+    width: 300px;
+    
+}
+
+.footer{
+    position: relative;
+    top: -600px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Pacifico';
+}

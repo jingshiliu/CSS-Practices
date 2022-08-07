@@ -1,0 +1,20 @@
+
+.speaker-info{
+    line-height: 1.5em;
+    padding-bottom: 5em;
+}
+
+.speaker-header-2{
+    color: grey;
+    font-weight: 400;
+    padding: 1em 0;
+}
+
+.speaker-info a{
+    color: #2a9d8f;
+    font-style: none;
+}
+
+.speaker-info a:hover{
+    color: #182120;
+}

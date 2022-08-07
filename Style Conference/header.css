@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue';
+}
+
+h1, h2, h3, label{
+    color: #2a9d8f;
+    font-weight: 300;
+}
+
+p{
+    color: grey;
+    font-weight: 300;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header, footer{
+    background-color: #033f5e;
+}
+
+header{
+    display: flex;
+    padding: 2.5em 15em;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 0;
+}
+
+.logo{
+    letter-spacing: 0.05em;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: normal;
+    width: 330px;
+    line-height: 1em;
+    border-top: 3px solid #2a9d8f;
+    padding-top: 1em;
+}
+
+.logo:hover, .section-links a:hover, footer a:hover{
+    color:#2a9d8f;
+}
+
+.date{
+    text-align: end;
+    padding-bottom: 1em;
+    color: #2a9d8f;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.section-links a{
+    font-weight: 320;
+    padding: 0 0.2em;
+}
+
+.header-2{
+    text-align: center;
+    padding: 3em;
+    background-color: #a8dadc;
+}
+
+.header-2 h1{
+    color: #2a9d8f;
+    padding-bottom: 0.5em;
+    font-weight: 300;
+    font-size: 2.8em;
+}
+
+.header-2 p{
+    color: grey;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.2em;
+    max-width: 700px;
+}
+
+
+footer{
+    padding: 3em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3{
+    color: #2a9d8f;
+    font-weight: 300;
+}
+
+.row{
+    display: block;
+}
+
+.grid{
+    padding: 3em 0;
+    display: block;
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media(max-width: 1050px){
+    header{
+        padding: 2.5em 20%;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 800px){
+    header, footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .date{
+        padding-top: 2em;
+        text-align: start;
+    }
+}

@@ -1,0 +1,63 @@
+.row-schedule *{
+    display: inline-block;
+}
+
+.row-schedule h3{
+    color: grey;
+}
+
+.grid{
+    max-width: 800px;
+}
+
+.col-1{
+    width: 100px;
+    text-align: end;
+    padding-right: 2em;
+}
+
+.col-2{
+    border-top: 1px solid rgb(223, 223, 223);
+    width: 80%;
+    text-align: start;
+    padding: 1.5em 0;
+    
+}
+
+.col-2 a{
+    color: #2a9d8f;
+}
+
+.schedule-speaker-section{
+    width: 45%;
+    padding-right: 1em;
+}
+
+.date{
+    border: none;
+}
+
+.day-schedule-section{
+    padding-bottom: 5em;
+}
+
+@media(max-width:700px){
+    .row-schedule{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-2{
+        display: block;
+        padding-top: 0;
+    }
+
+    .col-1{
+        text-align: start;
+    }
+
+    .schedule-speaker-section{
+        width: 100%;
+        padding-top: 1em;
+    }
+}
